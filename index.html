@@ -191,6 +191,26 @@
   #scclp .rev:nth-child(n+4){display:none}
   #scclp .stories{display:grid;grid-template-columns:1fr auto;gap:60px;align-items:center}
 }
+
+/* v4: Wes de primero, solo WhatsApp */
+#scclp .vhero .vbox{aspect-ratio:4/5;transition:aspect-ratio .3s}
+#scclp .vhero.playing .vbox{aspect-ratio:9/16}
+#scclp .vbox img.cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
+#scclp .playing img.cover{display:none}
+#scclp .btn-wa small{display:block;font:500 13.5px/1.25 Inter,sans-serif;opacity:.85;margin-top:3px}
+#scclp .ctas{grid-template-columns:1fr!important}
+#scclp .vcard.wide{grid-column:1/-1}
+#scclp .vcard.wide .vbox{aspect-ratio:16/9}
+#scclp .ask{background:linear-gradient(150deg,var(--navy2),var(--navy3));color:#fff;border-radius:18px;padding:18px 16px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+#scclp .ask p{font:400 30px/1 "Instrument Serif",Georgia,serif;font-style:italic;color:var(--mint)}
+#scclp .ask span{font-size:15px;line-height:1.4;color:#d2e1ef}
+#scclp .ask .btn{min-height:54px;font-size:15px;padding:10px 12px;border-radius:12px;margin-top:4px}
+#scclp .ask .btn svg.i{font-size:22px}
+#scclp .dock{grid-template-columns:1fr}
+#scclp .dock .btn-wa{padding:14px 22px}
+#scclp footer{padding-top:36px}
+@media (min-width:760px){#scclp .vids{grid-template-columns:repeat(2,280px)}}
+@media (min-width:1000px){#scclp .hero .col2{max-width:400px;justify-self:center}#scclp .hero .lay{grid-template-columns:1.1fr .9fr}#scclp .hero .col1,#scclp .hero .col3{grid-column:1}#scclp .hero .col2{grid-column:2;grid-row:1/3}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -202,7 +222,7 @@
 
 <div id="scclp">
 
-  <div class="bar">Free video consultation with the doctor · no cost, no commitment · <a href="#book" data-ev="book_click" data-place="bar">Pick your time</a></div>
+  <div class="bar">Free case review · send your X-ray or MRI · <a href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" data-ev="whatsapp_click" data-place="bar" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 
   <!-- ===== 1. VIDEO TESTIMONIO ===== -->
   <header class="hero">
@@ -214,12 +234,12 @@
       <div class="col1">
         <span class="eyebrow">Knee stem cell therapy · Medellín</span>
         <h1>Don't replace your knee. <em>Treat it.</em></h1>
-        <p class="lead">Hear it from a patient first. Then see how <b>50 million stem cells</b> are placed where your knee is worn, in <b>one day</b>.</p>
+        <p class="lead">Hear it from Wes, one year later. Then see how <b>50 million stem cells</b> are placed where your knee is worn, in <b>one day</b>.</p>
       </div>
       <div class="col2">
         <div class="vhero" data-video>
-          <div class="vbox"><video preload="none" playsinline poster="media/knee-jay.jpg" src="media/knee-jay.mp4" data-name="knee-jay"></video><button class="vplay" data-play aria-label="Play Jay's story"><i><svg><use href="#i-play"/></svg></i><em>Watch Jay's story · 1 min</em></button></div>
-          <div class="vcap"><span class="when">1 year and 4 months later</span><q>I can walk pain free and climb stairs.</q><span class="who">Jay · USA · Came back to treat his other knee</span></div>
+          <div class="vbox"><video preload="none" playsinline src="media/knee-story.mp4" data-name="knee-1-year"></video><img class="cover" src="media/knee-story-c.jpg" alt="Wes, one year after knee treatment" fetchpriority="high"><button class="vplay" data-play aria-label="Play Wes's story"><i><svg><use href="#i-play"/></svg></i><em>Watch Wes's story · 1 min</em></button></div>
+          <div class="vcap"><span class="when">1 year after knee treatment</span><q>My knee is doing really well. I can go back to running again.</q><span class="who">Wes · Real patient</span></div>
         </div>
       </div>
       <div class="col3">
@@ -228,8 +248,7 @@
           <div class="us">Comparable in the US<s>$20,000+</s></div>
         </div>
         <div class="ctas">
-          <a class="btn btn-book" href="#book" data-ev="book_click" data-place="hero"><svg class="i"><use href="#i-cam"/></svg><span>Free consultation with the doctor<small>By video · no cost · no commitment</small></span></a>
-          <a class="btn btn-wa" data-ev="whatsapp_click" data-place="hero" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+          <a class="btn btn-wa" data-ev="whatsapp_click" data-place="hero" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg><span>Chat on WhatsApp<small>Free case review · send your X-ray or MRI</small></span></a>
         </div>
         <ul class="ticks">
           <li><svg class="i"><use href="#i-ok"/></svg>No incisions</li>
@@ -279,15 +298,13 @@
           <li><svg class="i"><use href="#i-ok"/></svg>50 million stem cells</li>
           <li><svg class="i"><use href="#i-ok"/></svg>Ultrasound-guided application in a professional operating room</li>
           <li><svg class="i"><use href="#i-ok"/></svg>Local anesthesia</li>
-          <li><svg class="i"><use href="#i-ok"/></svg>Consultation with the doctor</li>
           <li><svg class="i"><use href="#i-ok"/></svg>A bilingual coordinator from your first message</li>
         </ul>
         <div class="adds"><b>Can be added to your plan</b><span>8 billion exosomes</span><span>Light sedation</span><span>Marriott Hotel, same building</span><span>Airport transfers</span></div>
       </div>
       <p class="fine">Final price confirmed in writing after your consultation. Flights and meals not included.</p>
       <div class="ctas" style="margin-top:18px">
-        <a class="btn btn-book" href="#book" data-ev="book_click" data-place="price"><svg class="i"><use href="#i-cam"/></svg>Get my exact price, free</a>
-        <a class="btn btn-wa" data-ev="whatsapp_click" data-place="price" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+        <a class="btn btn-wa" data-ev="whatsapp_click" data-place="price" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg><span>Get my exact price on WhatsApp<small>Free · your plan and price in writing</small></span></a>
       </div>
     </div>
   </div></div></section>
@@ -310,37 +327,20 @@
         <p class="fine" style="margin-top:8px">Real patients, individual experiences. Results vary between patients.</p>
       </div>
       <div class="vids">
-        <article class="vcard" data-video>
-          <div class="vbox"><video preload="none" playsinline poster="media/knee-story.jpg" src="media/knee-story.mp4" data-name="knee-1-year"></video><button class="vplay" data-play aria-label="Play Wes's story"><i><svg><use href="#i-play"/></svg></i></button></div>
-          <div class="vcap"><span class="when">1 year later</span><q>I can go back to running again.</q><span class="who">Wes · Knee</span></div>
+        <article class="vcard wide" data-video>
+          <div class="vbox"><video preload="none" playsinline poster="media/knee-jay.jpg" src="media/knee-jay.mp4" data-name="knee-jay"></video><button class="vplay" data-play aria-label="Play Jay's story"><i><svg><use href="#i-play"/></svg></i></button></div>
+          <div class="vcap"><span class="when">1 year and 4 months later</span><q>I can walk pain free and climb stairs.</q><span class="who">Jay · USA · Came back to treat his other knee</span></div>
         </article>
         <article class="vcard" data-video>
           <div class="vbox"><video preload="none" playsinline poster="media/knee-tendon.jpg" src="media/knee-tendon.mp4" data-name="knee-tendon-8-months"></video><button class="vplay" data-play aria-label="Play Ryan's story"><i><svg><use href="#i-play"/></svg></i></button></div>
           <div class="vcap"><span class="when">8 months later</span><q>I'm at about 90 percent.</q><span class="who">Ryan · Patellar tendon</span></div>
         </article>
+        <div class="ask">
+          <p>Is your knee next?</p>
+          <span>Send your X-ray or MRI. The medical team reviews your case for free.</span>
+          <a class="btn btn-wa" data-ev="whatsapp_click" data-place="stories" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+        </div>
       </div>
-    </div>
-  </div></section>
-
-  <!-- ===== MÉDICOS ===== -->
-  <section><div class="w">
-    <span class="eyebrow rv">Your specialists</span>
-    <h2 class="rv">Who applies <em>your treatment.</em></h2>
-    <div class="docs">
-      <div class="doc rv"><img src="img/dr-reyes.jpg" alt="Dr. Diana Reyes" loading="lazy"><div><h3>Dr. Diana Reyes</h3><div class="role">Anesthesiologist and pain specialist</div><p>15+ years. Performs the ultrasound-guided application.</p></div></div>
-      <div class="doc rv d1"><img src="img/dr-toro.jpg" alt="Dr. Esteban Toro" loading="lazy"><div><h3>Dr. Esteban Toro</h3><div class="role">Interventional pain physician</div><p>5,000+ interventional procedures, guided by imaging.</p></div></div>
-    </div>
-  </div></section>
-
-  <!-- ===== AGENDA ===== -->
-  <section class="final dark" id="book"><div class="w">
-    <span class="eyebrow">Free · by video · no commitment</span>
-    <h2>A knee replacement can't be undone. <em>Check this step first.</em></h2>
-    <p class="sub">Pick a day and time to talk with the doctor. Have your X-ray or MRI at hand if you have one.</p>
-    <div class="cal"><iframe id="scc-cal" data-src="https://api.leadconnectorhq.com/widget/bookings/consulta-dr-salgado" title="Book your free consultation" scrolling="no"></iframe></div>
-    <p class="or">Prefer to write first?</p>
-    <div class="ctas c" style="grid-template-columns:1fr;max-width:420px">
-      <a class="btn btn-wa" data-ev="whatsapp_click" data-place="final" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
     </div>
   </div></section>
 
@@ -352,13 +352,11 @@
   </div></footer>
 
   <div class="dock" id="scc-dock">
-    <a class="btn btn-book" href="#book" data-ev="book_click" data-place="dock">Free consultation with the doctor</a>
-    <a class="btn btn-wa" data-ev="whatsapp_click" data-place="dock" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i"><use href="#i-wa"/></svg></a>
+    <a class="btn btn-wa" data-ev="whatsapp_click" data-place="dock" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Chat on WhatsApp · free case review</a>
   </div>
 </div>
 
-<script src="https://api.leadconnectorhq.com/js/form_embed.js" defer></script>
-<script>window.SCC_LP = { tratamiento: 'knee', version: 'v3', ads: '', convWhatsApp: '', convCita: '' };</script>
+<script>window.SCC_LP = { tratamiento: 'knee', version: 'v4', ads: '', convWhatsApp: '', convCita: '' };</script>
 <script src="lp.js"></script>
 <!-- SCC-LP END -->
 </body>

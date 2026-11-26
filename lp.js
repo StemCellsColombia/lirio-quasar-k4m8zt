@@ -98,10 +98,10 @@
 
   /* 5) barra fija del celular: aparece al bajar y se esconde sobre la agenda */
   var dock = document.getElementById('scc-dock'), book = document.getElementById('book');
-  if (dock && book) {
+  if (dock) {
     var upd = function () {
-      var past = window.scrollY > window.innerHeight * 0.7;
-      var r = book.getBoundingClientRect(), onBook = r.top < window.innerHeight * 0.85 && r.bottom > 0;
+      var past = window.scrollY > window.innerHeight * 0.7, onBook = false;
+      if (book) { var r = book.getBoundingClientRect(); onBook = r.top < window.innerHeight * 0.85 && r.bottom > 0; }
       dock.classList.toggle('on', past && !onBook);
     };
     window.addEventListener('scroll', upd, { passive: true }); upd();
