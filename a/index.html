@@ -254,6 +254,14 @@
   #scclp .team .docs{grid-template-columns:1fr}
   #scclp .team .place{margin-top:28px;grid-template-columns:1fr}
 }
+
+/* versión corta */
+#scclp .how figure{display:none}
+#scclp .place{grid-template-columns:1fr 1fr}
+#scclp .place figure{aspect-ratio:1/1}
+#scclp .place figcaption{font-size:19px;padding:30px 12px 12px}
+#scclp .place figcaption span{font-size:13.5px}
+@media (min-width:1000px){#scclp .how figure{display:block}#scclp .team .place{grid-template-columns:1fr 1fr}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -302,19 +310,6 @@
     <span>50 million stem cells</span><span>Ultrasound-guided</span><span>One treatment day</span><span>No incisions</span><span>No hospital stay</span><span>From $1,999</span><span>Free consultation with the doctor</span>
   </div></div>
 
-  <!-- ===== ¿LE SUENA? ===== -->
-  <section><div class="w">
-    <span class="eyebrow rv">Sound familiar?</span>
-    <h2 class="rv">Tired of watching <em>from the sidelines?</em></h2>
-    <div class="pain">
-      <div class="pcard rv"><h3>"You need a new knee."</h3><p>You were told it's time for a replacement, and you want every option before an implant and months of rehab.</p></div>
-      <div class="pcard rv d1"><h3>"Why does it keep coming back?"</h3><p>Cortisone, hyaluronic acid or PRP helped for a while. Then the pain came back, faster each time.</p></div>
-      <div class="pcard rv"><h3>"Surgery for a meniscus?"</h3><p>Pain on the joint line, catching, swelling, and a surgeon already talking about arthroscopy.</p></div>
-      <div class="pcard rv d1"><h3>"It's bone on bone."</h3><p>Moderate to advanced arthritis. Stairs you avoid, stiff mornings, walks that keep getting shorter.</p></div>
-    </div>
-    <p class="hint rv">There may be a step <em>before surgery.</em> A doctor reviews your X-ray or MRI first, free.</p>
-  </div></section>
-
   <!-- ===== HISTORIAS ===== -->
   <section class="dark"><div class="w">
     <span class="eyebrow rv">Real patients</span>
@@ -345,12 +340,6 @@
       <div class="rev rv d1"><span class="stars">★★★★★</span><p>"The facility and staff were very friendly and caring. Everything was detailed and handed to you in English."</p><span class="who">Paulette H. · For her mother-in-law · Google review</span></div>
     </div>
     <p class="fine">Real patients, individual experiences. Results vary between patients.</p>
-    <div class="nums">
-      <div class="num rv"><b data-count="8000">8,000</b><span>procedures performed by the lead doctors</span></div>
-      <div class="num rv d1"><b data-count="50" data-suf="M">50M</b><span>living stem cells applied to your knee</span></div>
-      <div class="num rv"><b data-count="1" data-suf=" day">1 day</b><span>for the treatment itself</span></div>
-      <div class="num rv d1"><b>0</b><span>incisions, implants or hospital nights</span></div>
-    </div>
   </div></section>
 
   <!-- ===== PRECIO ===== -->
@@ -380,18 +369,6 @@
     </div>
   </div></section>
 
-  <!-- ===== OPCIONES ===== -->
-  <section><div class="w">
-    <span class="eyebrow rv">Your options, side by side</span>
-    <h2 class="rv">Shots cushion. A replacement removes. <em>Stem cells work with your own knee.</em></h2>
-    <div class="opts">
-      <div class="opt rv"><h3>Cortisone or hyaluronic acid</h3><dl><div><dt>What it does</dt><dd>Lowers inflammation or adds lubrication.</dd></div><div><dt>Time away</dt><dd>An appointment.</dd></div><div><dt>Then what</dt><dd>Relief for a few months, then you repeat it.</dd></div></dl></div>
-      <div class="opt rv d1"><h3>PRP</h3><dl><div><dt>What it does</dt><dd>Growth factors from your own blood. No stem cells.</dd></div><div><dt>Time away</dt><dd>An appointment.</dd></div><div><dt>Then what</dt><dd>A short boost that often fades.</dd></div></dl></div>
-      <div class="opt rv d2"><h3>Knee replacement</h3><dl><div><dt>What it does</dt><dd>Removes the joint surfaces and implants metal and plastic.</dd></div><div><dt>Time away</dt><dd>Hospital stay, then weeks to months of rehab.</dd></div><div><dt>Then what</dt><dd>It can't be undone.</dd></div></dl></div>
-      <div class="opt best rv d3"><span class="pill">The step to consider first</span><h3>Stem cell therapy</h3><dl><div><dt>What it does</dt><dd>50 million living stem cells work inside your own joint.</dd></div><div><dt>Time away</dt><dd>One treatment day. No hospital stay.</dd></div><div><dt>Then what</dt><dd>Gradual improvement over 4–6 months. A replacement is still an option later.</dd></div></dl></div>
-    </div>
-  </div></section>
-
   <!-- ===== CÓMO FUNCIONA ===== -->
   <section class="dark how"><div class="w"><div class="lay">
     <figure class="rv"><img src="../img/knee-guided.jpg" alt="Ultrasound-guided stem cell application in the knee" loading="lazy"><figcaption>A real application: the ultrasound shows the needle inside the joint.</figcaption></figure>
@@ -412,22 +389,15 @@
 
   <!-- ===== CIENCIA ===== -->
   <section class="mist"><div class="w">
-    <span class="eyebrow rv">The science</span>
+    <span class="eyebrow rv">The science, in short</span>
     <h2 class="rv">What 50 million cells <em>do inside your knee.</em></h2>
-    <p class="sub rv">Mesenchymal stem cells act as signaling cells. They release growth factors and cytokines that act on the cartilage, the joint lining and the bone you already have.</p>
-    <div class="sci">
-      <div class="mech rv"><i><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6.500 6 10a6 6 0 0 1-12 0c0-3.500 3-6 6-10z"/><path d="M9.500 14.500A2.500 2.500 0 0 0 12 17"/></svg></i><div><h3>The inflamed lining settles</h3><p>Much knee pain comes from an inflamed synovium. The cells may lower the mediators <b>(IL-1β, TNF-α)</b> that keep it irritated.</p></div></div>
-      <div class="mech rv d1"><i><svg viewBox="0 0 24 24"><path d="M4 18c2-3 4.500-4.500 8-4.500S18 15 20 18"/><path d="M4 6c2 3 4.500 4.500 8 4.500S18 9 20 6"/></svg></i><div><h3>Your cartilage cells get support</h3><p>Their signals may push your <b>chondrocytes</b> to lay down more type II collagen, what cartilage is made of.</p></div></div>
-      <div class="mech rv d2"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 12h8M12 8v8"/></svg></i><div><h3>Less cartilage breakdown</h3><p>Worn cartilage releases enzymes <b>(MMPs)</b> that dissolve it. The signaling may damp them down.</p></div></div>
-      <div class="mech rv d3"><i><svg viewBox="0 0 24 24"><path d="M3 12c3-5 6-5 9 0s6 5 9 0"/><path d="M3 17c3-5 6-5 9 0s6 5 9 0" opacity=".5"/></svg></i><div><h3>A joint that glides</h3><p>The lining may produce more <b>hyaluronic acid and lubricin</b>, the molecules that let the joint slide.</p></div></div>
-    </div>
-    <div class="qual rv">
-      <h3>Every batch, lab-verified</h3>
+    <div class="qual rv" style="margin-top:26px">
+      <h3>They work with the knee you have</h3>
       <ul>
-        <li><svg class="i"><use href="#i-ok"/></svg>From donated umbilical cord tissue, never embryos</li>
-        <li><svg class="i"><use href="#i-ok"/></svg>Passage&#160;3–4, viability above 90%</li>
-        <li><svg class="i"><use href="#i-ok"/></svg>A lab that follows GMP standards</li>
-        <li><svg class="i"><use href="#i-ok"/></svg>A certificate of analysis for your own cells</li>
+        <li><svg class="i"><use href="#i-ok"/></svg>May calm the inflamed joint lining (IL-1β, TNF-α)</li>
+        <li><svg class="i"><use href="#i-ok"/></svg>May support your cartilage cells (chondrocytes)</li>
+        <li><svg class="i"><use href="#i-ok"/></svg>From donated umbilical cord tissue, passage&#160;3–4, viability above 90%</li>
+        <li><svg class="i"><use href="#i-ok"/></svg>A lab that follows GMP standards, with a certificate of analysis for your own cells</li>
       </ul>
     </div>
     <p class="fine">Improvement is gradual, usually between 4 and 6 months after treatment. Results vary between patients.</p>
@@ -441,7 +411,6 @@
       <div class="docs">
         <div class="doc rv"><img src="../img/dr-reyes.jpg" alt="Dr. Diana Reyes" loading="lazy"><div><h3>Dr. Diana Reyes</h3><div class="role">Anesthesiologist and pain specialist · 15+ years</div><p>Performs the ultrasound-guided application.</p></div></div>
         <div class="doc rv"><img src="../img/dr-toro.jpg" alt="Dr. Esteban Toro" loading="lazy" style="object-position:center 10%"><div><h3>Dr. Esteban Toro</h3><div class="role">Interventional pain physician · Anesthesiologist</div><p>5,000+ interventional procedures, guided by imaging.</p></div></div>
-        <div class="doc rv"><img src="../img/team-or.jpg" alt="The medical team in the operating room" loading="lazy" style="object-position:center 20%"><div><h3>Specialists, 15+ years</h3><div class="role">One job: precision</div><p>Every application is guided by imaging, in an operating room.</p></div></div>
       </div>
       <div class="place">
         <figure class="rv"><img src="../img/or.jpg" alt="Professional operating room" loading="lazy"><figcaption>A professional operating room<span>Where your application is done.</span></figcaption></figure>
@@ -458,9 +427,7 @@
     <details><summary>How much does it cost?</summary><p>Knee treatment in Medellín starts from $1,999 USD: the stem cells, the guided application in the operating room with local anesthesia, and a consultation with the doctor. The Marriott Hotel in the same building, airport transfers, sedation and exosomes can be added to your plan, and your coordinator sends that price in writing. Comparable treatments in the US typically run $20,000+.</p></details>
     <details><summary>Does it hurt?</summary><p>The application is done with local anesthesia, so you stay comfortable. Light sedation can be added to your plan.</p></details>
     <details><summary>When will I notice a change?</summary><p>Improvement builds gradually, usually between 4 and 6 months after treatment, and some patients keep improving up to 8 months. Results vary.</p></details>
-    <details><summary>Can both knees be treated on the same trip?</summary><p>Yes. Both knees can be treated on the same day, and your written quote shows exactly what's included.</p></details>
     <details><summary>How long do I stay in Medellín?</summary><p>The treatment itself takes one day. The doctors recommend staying about 3 days in Colombia before flying home.</p></details>
-    <details><summary>Is it safe to travel to Medellín?</summary><p>A bilingual coordinator is with you from your first message. Airport transfers and the Marriott Hotel in the same building as the treatment center can be added to your plan, so you barely need to move around the city.</p></details>
     <details><summary>Is it legal?</summary><p>Stem cell therapy is not approved by the FDA, but in Colombia it is legal. People with active cancer cannot be treated.</p></details>
   </div></section>
 

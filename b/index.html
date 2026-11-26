@@ -220,6 +220,17 @@
   #scclp .hero>.w{padding-bottom:96px}
   #scclp .hero .txt{max-width:700px}
 }
+
+/* versión corta */
+#scclp section{padding:68px 0}
+#scclp .split figure{display:none}
+#scclp .docs,#scclp .trio{grid-template-columns:1fr 1fr;gap:18px}
+#scclp .doc h3{font-size:25px}
+#scclp .doc .role{font-size:11px;letter-spacing:.14em}
+#scclp .doc p{font-size:15.5px;line-height:1.45}
+#scclp .trio h3{font-size:21px}
+#scclp .trio p{font-size:15px}
+@media (min-width:760px){#scclp section{padding:112px 0}#scclp .split figure{display:block}#scclp .docs{gap:56px}#scclp .trio{grid-template-columns:1fr 1fr;gap:28px}#scclp .doc h3{font-size:32px}#scclp .doc .role{font-size:12.5px;letter-spacing:.24em}#scclp .doc p{font-size:17.5px}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -262,33 +273,17 @@
     </div>
   </div></section>
 
-  <!-- ===== ENFOQUE ===== -->
-  <section><div class="w"><div class="split">
-    <figure class="rv"><img src="../img/team-or.jpg" alt="A specialist prepares an application in the operating room" loading="lazy"><figcaption>The application is performed by a specialist, in an operating room.</figcaption></figure>
-    <div>
-      <span class="label rv"><i>ii.</i> The approach</span>
-      <h2 class="rv">Precision, <em>before everything.</em></h2>
-      <p class="sub rv">Where the cells are placed matters as much as the cells themselves. Every step is designed around that.</p>
-      <ul class="rows">
-        <li class="rv"><b>1</b><div><h3>Your imaging is read first</h3><p>A doctor focused on orthopedics reviews your X-ray or MRI with you, before you travel.</p></div></li>
-        <li class="rv"><b>2</b><div><h3>Guided in real time</h3><p>Ultrasound lets the specialist see inside the joint while the cells are placed.</p></div></li>
-        <li class="rv"><b>3</b><div><h3>A professional operating room</h3><p>Local anesthesia keeps you comfortable. Light sedation is available on request.</p></div></li>
-      </ul>
-    </div>
-  </div></div></section>
-
   <!-- ===== CIENCIA ===== -->
   <section class="dark"><div class="w"><div class="split r">
     <figure class="rv"><img src="../img/knee-guided.jpg" alt="Ultrasound-guided stem cell application in the knee" loading="lazy"><figcaption>A real application. The ultrasound shows the needle inside the joint.</figcaption></figure>
     <div>
-      <span class="label rv"><i>iii.</i> The science</span>
+      <span class="label rv"><i>ii.</i> The science</span>
       <h2 class="rv">What the cells do <em>inside the joint.</em></h2>
       <p class="sub rv">Mesenchymal stem cells act through signaling. They release growth factors and cytokines that act on the cartilage, the lining and the bone you already have.</p>
       <ul class="rows">
         <li class="rv"><b>i</b><div><h3>The inflamed lining settles</h3><p>The cells may lower the mediators (IL-1β, TNF-α) that keep the synovium irritated.</p></div></li>
         <li class="rv"><b>ii</b><div><h3>Your cartilage cells are supported</h3><p>Their signals may encourage chondrocytes to produce type II collagen, the substance of cartilage.</p></div></li>
-        <li class="rv"><b>iii</b><div><h3>Less breakdown</h3><p>The enzymes that dissolve worn cartilage (MMPs) may be quieted.</p></div></li>
-        <li class="rv"><b>iv</b><div><h3>A joint that glides</h3><p>The lining may produce more hyaluronic acid and lubricin, the joint's own lubricants.</p></div></li>
+        <li class="rv"><b>iii</b><div><h3>A joint that glides</h3><p>The lining may produce more hyaluronic acid and lubricin, the joint's own lubricants.</p></div></li>
       </ul>
       <p class="fine">Improvement is gradual, usually between four and six months. Results vary between patients.</p>
     </div>
@@ -296,21 +291,19 @@
 
   <!-- ===== LAS CÉLULAS ===== -->
   <section class="paper"><div class="w">
-    <span class="label rv"><i>iv.</i> The cells</span>
+    <span class="label rv"><i>iii.</i> The cells</span>
     <h2 class="rv">Documented, <em>batch by batch.</em></h2>
     <dl class="spec">
       <div class="rv"><dt>Source</dt><dd>Donated umbilical cord tissue<small>Recovered after healthy births. Never embryos.</small></dd></div>
-      <div class="rv"><dt>Cell stage</dt><dd>Passage&#160;3–4<small>Early in culture: subcultured three to four times.</small></dd></div>
-      <div class="rv"><dt>Viability</dt><dd>Above 90%<small>Lab-tested before every release.</small></dd></div>
+      <div class="rv"><dt>Cell stage and viability</dt><dd>Passage&#160;3–4, above 90%<small>Lab-tested before every release.</small></dd></div>
       <div class="rv"><dt>Laboratory</dt><dd>Follows GMP standards<small>Screened for sterility before release.</small></dd></div>
-      <div class="rv"><dt>For the knee</dt><dd>50 million cells<small>Exosomes can be added to your plan.</small></dd></div>
       <div class="rv"><dt>Documentation</dt><dd>Certificate of analysis<small>Each patient receives one for their own cells.</small></dd></div>
     </dl>
   </div></section>
 
   <!-- ===== HISTORIAS ===== -->
   <section class="dark"><div class="w">
-    <span class="label rv"><i>v.</i> Patient stories</span>
+    <span class="label rv"><i>iv.</i> Patient stories</span>
     <h2 class="rv">In their <em>own words.</em></h2>
     <div class="feat" data-video>
       <div class="vbox rv"><video preload="none" playsinline src="../media/knee-story.mp4" data-name="knee-1-year"></video><img class="cover" src="../media/knee-story-c.jpg" alt="Wes, one year after knee treatment" loading="lazy"><button class="vplay" data-play aria-label="Play Wes's story"><i><svg><use href="#i-play"/></svg></i><span>Watch · 1 min</span></button></div>
@@ -345,7 +338,7 @@
 
   <!-- ===== MÉDICOS ===== -->
   <section><div class="w">
-    <span class="label rv"><i>vi.</i> Your physicians</span>
+    <span class="label rv"><i>v.</i> Your physicians</span>
     <h2 class="rv">Specialists in <em>precision.</em></h2>
     <div class="docs">
       <div class="doc rv"><img src="../img/dr-reyes.jpg" alt="Dr. Diana Reyes" loading="lazy"><h3>Dr. Diana Reyes</h3><div class="role">Anesthesiologist · Pain specialist</div><p>More than fifteen years of experience. Performs the ultrasound-guided application: placing treatments with precision is her daily work.</p></div>
@@ -355,20 +348,19 @@
 
   <!-- ===== EL LUGAR ===== -->
   <section class="paper"><div class="w">
-    <span class="label rv"><i>vii.</i> The place</span>
+    <span class="label rv"><i>vi.</i> The place</span>
     <h2 class="rv">Medellín, <em>made simple.</em></h2>
     <p class="sub rv">A bilingual coordinator is with you from your first message to your flight home.</p>
     <div class="wide rv"><img src="../img/medellin.jpg" alt="Medellín, Colombia" loading="lazy"><div class="cap"><b>The city of eternal spring</b><span>Direct flights from several US cities.</span></div></div>
     <div class="trio">
       <div class="rv"><img src="../img/or.jpg" alt="Professional operating room" loading="lazy"><h3>A professional operating room</h3><p>Where every knee application is performed.</p></div>
-      <div class="rv d1"><img src="../img/hotel.jpg" alt="Marriott Hotel in Medellín" loading="lazy"><h3>The Marriott Hotel, same building</h3><p>Rest one elevator away from your treatment.</p></div>
-      <div class="rv d2"><img src="../img/hotel-pool.jpg" alt="Hotel pool" loading="lazy"><h3>Time to recover</h3><p>The doctors recommend about three days in Colombia before flying home.</p></div>
+      <div class="rv d1"><img src="../img/hotel.jpg" alt="Marriott Hotel in Medellín" loading="lazy"><h3>The Marriott Hotel, same building</h3><p>Rest one elevator away. The doctors recommend about three days before flying home.</p></div>
     </div>
   </div></section>
 
   <!-- ===== INVERSIÓN ===== -->
   <section class="dark invest"><div class="w">
-    <span class="label rv"><i>viii.</i> Your plan</span>
+    <span class="label rv"><i>vii.</i> Your plan</span>
     <h2 class="rv">Written for your knee. <em>Sent to you in writing.</em></h2>
     <p class="sub rv">No two knees are the same. After your consultation you receive your plan and its price in writing, before you commit to anything.</p>
     <ul class="incl">
@@ -385,19 +377,18 @@
 
   <!-- ===== PREGUNTAS ===== -->
   <section><div class="nw">
-    <span class="label"><i>ix.</i> Questions</span>
+    <span class="label"><i>viii.</i> Questions</span>
     <h2>What patients <em>ask first.</em></h2>
     <details><summary>Am I a candidate?</summary><p>Most people with knee arthritis, cartilage wear or a meniscus tear can be evaluated. The doctor reviews your X-ray or MRI with you in the consultation, at no cost.</p></details>
     <details><summary>Does it hurt?</summary><p>The application is done with local anesthesia, so you stay comfortable. Light sedation is available on request.</p></details>
     <details><summary>When will I notice a change?</summary><p>Improvement builds gradually, usually between four and six months after treatment, and some patients keep improving up to eight months. Results vary.</p></details>
-    <details><summary>Can both knees be treated on the same trip?</summary><p>Yes. Both knees can be treated on the same day, and your written plan shows exactly what is included.</p></details>
     <details><summary>How long do I stay in Medellín?</summary><p>The treatment itself takes one day. The doctors recommend staying about three days in Colombia before flying home.</p></details>
     <details><summary>Is it legal?</summary><p>Stem cell therapy is not approved by the FDA, but in Colombia it is legal. People with active cancer cannot be treated.</p></details>
   </div></section>
 
   <!-- ===== CIERRE + AGENDA ===== -->
   <section class="final dark" id="book"><div class="w">
-    <span class="label"><i>x.</i> Your consultation</span>
+    <span class="label"><i>ix.</i> Your consultation</span>
     <h2>Begin with <em>a conversation.</em></h2>
     <p class="sub">Choose a time for a complimentary video consultation with the doctor. Have your X-ray or MRI at hand if you have one.</p>
     <div class="cal"><iframe id="scc-cal" data-src="https://api.leadconnectorhq.com/widget/bookings/consulta-dr-salgado" title="Book your consultation" scrolling="no"></iframe></div>
