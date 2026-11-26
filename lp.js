@@ -27,13 +27,13 @@
   }
 
   /* 2) eventos: dataLayer, Google Ads y Meta */
-  var META = { whatsapp_click: 'Contact', booking_done: 'Schedule', book_click: 'ViewContent' };
+  var META = { whatsapp_click: 'Contact', call_click: 'Contact', booking_done: 'Schedule', book_click: 'ViewContent' };
   function track(ev, extra) {
     var p = Object.assign({ treatment: C.tratamiento, variant: C.version, page: location.pathname }, src, extra || {});
     try { (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: 'scc_' + ev }, p)); } catch (e) {}
     if (typeof window.gtag === 'function') {
       window.gtag('event', ev, p);
-      var lab = ev === 'whatsapp_click' ? C.convWhatsApp : (ev === 'booking_done' ? C.convCita : '');
+      var lab = ev === 'whatsapp_click' ? C.convWhatsApp : (ev === 'call_click' ? C.convLlamada : (ev === 'booking_done' ? C.convCita : ''));
       if (C.ads && lab) window.gtag('event', 'conversion', { send_to: C.ads + '/' + lab });
     }
     if (typeof window.fbq === 'function') {
