@@ -216,6 +216,27 @@
 #scclp footer{padding-top:36px}
 @media (min-width:760px){#scclp .vids{grid-template-columns:repeat(2,280px)}}
 @media (min-width:1000px){#scclp .hero .col2{max-width:400px;justify-self:center}#scclp .hero .lay{grid-template-columns:1.1fr .9fr}#scclp .hero .col1,#scclp .hero .col3{grid-column:1}#scclp .hero .col2{grid-column:2;grid-row:1/3}}
+
+/* v6: versión corta */
+#scclp section{padding:44px 0}
+#scclp .hero{padding-bottom:32px}
+#scclp .vhero .vbox{aspect-ratio:1/1}
+#scclp .sci3{display:grid;gap:0;margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:6px 20px}
+#scclp .sci3 li{padding:14px 0 14px 34px;position:relative;font-size:17.5px;line-height:1.4;color:#42566d}
+#scclp .sci3 li+li{border-top:1px solid var(--line)}
+#scclp .sci3 li::before{content:"";position:absolute;left:0;top:17px;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--mint),var(--aqua)) ;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.7 7.7-5.4 6a1 1 0 0 1-1.5 0l-2.500-2.600a1 1 0 1 1 1.400-1.400l1.800 1.800 4.700-5.200a1 1 0 0 1 1.500 1.400z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.7 7.7-5.4 6a1 1 0 0 1-1.5 0l-2.500-2.600a1 1 0 1 1 1.400-1.400l1.800 1.800 4.700-5.200a1 1 0 0 1 1.500 1.400z'/%3E%3C/svg%3E") center/contain no-repeat;background-color:var(--blue)}
+#scclp .sci3 b{color:var(--ink);font-weight:600}
+#scclp .pcard{padding:20px}
+#scclp .pcard .n{font-size:64px}
+#scclp .chk{gap:8px;margin-top:14px}
+#scclp .chk li{font-size:17px}
+#scclp .addline{position:relative;margin-top:14px;padding-top:12px;border-top:1px dashed var(--lineD);font-size:15px;line-height:1.45;color:#b8cce0}
+#scclp .addline b{color:var(--mint);font-weight:600}
+#scclp .price .lay{gap:18px}
+#scclp .ghead{margin-top:16px;padding:12px 16px}
+#scclp .rev p{margin:8px 0 12px}
+@media (min-width:760px){#scclp section{padding:72px 0}}
+@media (min-width:1000px){#scclp .vhero .vbox{aspect-ratio:4/5}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -240,7 +261,7 @@
       <div class="col1">
         <span class="eyebrow">Knee stem cell therapy · Medellín</span>
         <h1>Don't replace your knee. <em>Treat it.</em></h1>
-        <p class="lead">Hear it from Wes, one year later. Then see how <b>50 million stem cells</b> are placed where your knee is worn, in <b>one day</b>.</p>
+        <p class="lead"><b>50 million stem cells</b>, placed where your knee is worn. <b>One day.</b> No incisions.</p>
       </div>
       <div class="col2">
         <div class="vhero" data-video>
@@ -255,13 +276,8 @@
         </div>
         <div class="ctas">
           <a class="btn btn-wa" data-ev="whatsapp_click" data-place="hero" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg><span>Chat on WhatsApp<small>Free case review · send your X-ray or MRI</small></span></a>
-          <a class="btn btn-call" data-ev="call_click" data-place="hero" href="tel:+18887089520"><svg class="i"><use href="#i-tel"/></svg><span>Call toll-free 1 (888) 708-9520<small>Free call from the US</small></span></a>
+          <a class="btn btn-call" data-ev="call_click" data-place="hero" href="tel:+18887089520"><svg class="i"><use href="#i-tel"/></svg><span>Call free <span style="white-space:nowrap">1 (888) 708-9520</span><small>Toll-free from the US</small></span></a>
         </div>
-        <ul class="ticks">
-          <li><svg class="i"><use href="#i-ok"/></svg>No incisions</li>
-          <li><svg class="i"><use href="#i-ok"/></svg>No hospital stay</li>
-          <li><svg class="i"><use href="#i-ok"/></svg>8,000 procedures by the lead doctors</li>
-        </ul>
       </div>
     </div></div>
   </header>
@@ -270,23 +286,12 @@
   <section class="mist"><div class="w">
     <span class="eyebrow rv">The science</span>
     <h2 class="rv">How stem cells help your knee, <em>according to science.</em></h2>
-    <p class="sub rv">Mesenchymal stem cells act as signaling cells. Placed inside the joint, they release growth factors and cytokines that act on the cartilage, the lining and the bone you already have.</p>
-    <div class="sci">
-      <div class="mech rv"><i><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6.500 6 10a6 6 0 0 1-12 0c0-3.500 3-6 6-10z"/><path d="M9.500 14.500A2.500 2.500 0 0 0 12 17"/></svg></i><div><h3>They calm the inflamed joint lining</h3><p>Much knee pain comes from an inflamed synovium. The cells may lower the mediators <b>(IL-1β, TNF-α)</b> that keep it irritated.</p></div></div>
-      <div class="mech rv d1"><i><svg viewBox="0 0 24 24"><path d="M4 18c2-3 4.500-4.500 8-4.500S18 15 20 18"/><path d="M4 6c2 3 4.500 4.500 8 4.500S18 9 20 6"/></svg></i><div><h3>They support your cartilage cells</h3><p>Their signals may push your <b>chondrocytes</b> to lay down more type II collagen, what cartilage is made of.</p></div></div>
-      <div class="mech rv"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 12h8"/></svg></i><div><h3>They slow cartilage breakdown</h3><p>Worn cartilage releases enzymes <b>(MMPs)</b> that dissolve it. The signaling may damp them down.</p></div></div>
-      <div class="mech rv d1"><i><svg viewBox="0 0 24 24"><path d="M3 12c3-5 6-5 9 0s6 5 9 0"/><path d="M3 17c3-5 6-5 9 0s6 5 9 0" opacity=".5"/></svg></i><div><h3>They help the joint glide</h3><p>The lining may produce more <b>hyaluronic acid and lubricin</b>, the molecules that let the joint slide.</p></div></div>
-    </div>
-    <div class="qual rv">
-      <h3>Every batch, lab-verified</h3>
-      <ul>
-        <li><svg class="i"><use href="#i-ok"/></svg>From donated umbilical cord tissue, never embryos</li>
-        <li><svg class="i"><use href="#i-ok"/></svg>Passage&#160;3–4, viability above 90%</li>
-        <li><svg class="i"><use href="#i-ok"/></svg>A lab that follows GMP standards</li>
-        <li><svg class="i"><use href="#i-ok"/></svg>A certificate of analysis for your own cells</li>
-      </ul>
-    </div>
-    <p class="fine">Improvement is gradual, usually between 4 and 6 months after treatment. Results vary between patients.</p>
+    <ul class="sci3 rv">
+      <li><b>Less inflammation.</b> They may calm the irritated joint lining.</li>
+      <li><b>Cartilage support.</b> They may help your own cartilage cells and slow its breakdown.</li>
+      <li><b>A joint that glides.</b> They may help it produce its natural lubricants.</li>
+    </ul>
+    <p class="fine">Improvement is gradual, usually between 4 and 6 months. Results vary between patients.</p>
   </div></section>
 
   <!-- ===== 3. PRECIO Y QUÉ INCLUYE ===== -->
@@ -294,7 +299,6 @@
     <div>
       <span class="eyebrow rv">Price and what's included</span>
       <h2 class="rv">Not just for the 1%. <em>One clear price.</em></h2>
-      <p class="sub rv">You get your plan and price in writing before you book a flight. The application is done by a specialist, guided by ultrasound, in a professional operating room.</p>
     </div>
     <div>
       <div class="pcard rv">
@@ -307,12 +311,12 @@
           <li><svg class="i"><use href="#i-ok"/></svg>Local anesthesia</li>
           <li><svg class="i"><use href="#i-ok"/></svg>A bilingual coordinator from your first message</li>
         </ul>
-        <div class="adds"><b>Can be added to your plan</b><span>8 billion exosomes</span><span>Light sedation</span><span>Marriott Hotel, same building</span><span>Airport transfers</span></div>
+        <p class="addline"><b>Can be added:</b> 8 billion exosomes, light sedation, the Marriott Hotel in the same building, airport transfers.</p>
       </div>
-      <p class="fine">Final price confirmed in writing after your consultation. Flights and meals not included.</p>
+      <p class="fine">Final price confirmed in writing. Flights and meals not included.</p>
       <div class="ctas" style="margin-top:18px">
         <a class="btn btn-wa" data-ev="whatsapp_click" data-place="price" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg><span>Get my exact price on WhatsApp<small>Free · your plan and price in writing</small></span></a>
-        <a class="btn btn-call" data-ev="call_click" data-place="price" href="tel:+18887089520"><svg class="i"><use href="#i-tel"/></svg><span>Call toll-free 1 (888) 708-9520<small>Free call from the US</small></span></a>
+        <a class="btn btn-call" data-ev="call_click" data-place="price" href="tel:+18887089520"><svg class="i"><use href="#i-tel"/></svg><span>Call free <span style="white-space:nowrap">1 (888) 708-9520</span><small>Toll-free from the US</small></span></a>
       </div>
     </div>
   </div></div></section>
@@ -329,27 +333,6 @@
       <div class="rev"><span class="stars">★★★★★</span><p>"The doctor and staff was very friendly and gentle during the process. Definitely recommended."</p><div class="who"><i>T</i><div>Tom T.<span>Google review</span></div></div></div>
       <div class="rev"><span class="stars">★★★★★</span><p>"Amazing customer service leading up to the procedure as well as after."</p><div class="who"><i>T</i><div>Tyson G.<span>Google review</span></div></div></div>
     </div>
-    <div class="stories">
-      <div>
-        <p class="more rv">More patients, months after their knee treatment</p>
-        <p class="fine" style="margin-top:8px">Real patients, individual experiences. Results vary between patients.</p>
-      </div>
-      <div class="vids">
-        <article class="vcard wide" data-video>
-          <div class="vbox"><video preload="none" playsinline poster="media/knee-jay.jpg" src="media/knee-jay.mp4" data-name="knee-jay"></video><button class="vplay" data-play aria-label="Play Jay's story"><i><svg><use href="#i-play"/></svg></i></button></div>
-          <div class="vcap"><span class="when">1 year and 4 months later</span><q>I can walk pain free and climb stairs.</q><span class="who">Jay · USA · Came back to treat his other knee</span></div>
-        </article>
-        <article class="vcard" data-video>
-          <div class="vbox"><video preload="none" playsinline poster="media/knee-tendon.jpg" src="media/knee-tendon.mp4" data-name="knee-tendon-8-months"></video><button class="vplay" data-play aria-label="Play Ryan's story"><i><svg><use href="#i-play"/></svg></i></button></div>
-          <div class="vcap"><span class="when">8 months later</span><q>I'm at about 90 percent.</q><span class="who">Ryan · Patellar tendon</span></div>
-        </article>
-        <div class="ask">
-          <p>Is your knee next?</p>
-          <span>Send your X-ray or MRI. The medical team reviews your case for free.</span>
-          <a class="btn btn-wa" data-ev="whatsapp_click" data-place="stories" href="https://wa.me/573108819333?text=Hi%2C%20I%27m%20interested%20in%20knee%20treatment" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
-        </div>
-      </div>
-    </div>
   </div></section>
 
   <footer><div class="w">
@@ -365,7 +348,7 @@
   </div>
 </div>
 
-<script>window.SCC_LP = { tratamiento: 'knee', version: 'v5', ads: '', convWhatsApp: '', convCita: '' };</script>
+<script>window.SCC_LP = { tratamiento: 'knee', version: 'v6', ads: '', convWhatsApp: '', convCita: '' };</script>
 <script src="lp.js"></script>
 <!-- SCC-LP END -->
 </body>
